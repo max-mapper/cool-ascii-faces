@@ -1,3 +1,5 @@
+var spigot = require("stream-spigot")
+
 var faces = [
   "ヽ༼ຈل͜ຈ༽ﾉ",
   "(ง°ل͜°)ง",
@@ -44,3 +46,4 @@ module.exports = function() {
 }
 
 module.exports.faces = faces
+module.exports.faceStream = spigot(faces)
