@@ -3,12 +3,12 @@
 get some cool ascii faces
 
 ```
-var facePlz = require('cool-ascii-faces')
-console.log(facePlz())
+var GetACoolRandomCoolAsciiFace = require('cool-ascii-faces')
+console.log(GetACoolRandomCoolAsciiFace())
 ᕙ༼ຈل͜ຈ༽ᕗ
-console.log(facePlz())
+console.log(GetACoolRandomCoolAsciiFace())
 ( ͝° ͜ʖ͡°)
-facePlz.faces
+GetACoolRandomCoolAsciiFace.faces
 [ 'ヽ༼ຈل͜ຈ༽ﾉ',
   '(ง°ل͜°)ง',
   '༼ つ ಥ_ಥ ༽つ',
@@ -48,3 +48,7 @@ facePlz.faces
   '( ͝° ͜ʖ͡°)',
   '(ง •̀_•́)ง' ]
 ```
+
+## pedants
+
+yes most of these use non-ascii unicode characters but 'unicode art' doesnt have the same ring as 'ascii art'
