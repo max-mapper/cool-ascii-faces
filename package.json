@@ -1,6 +1,6 @@
 {
   "name": "cool-ascii-faces",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "get some cool ascii faces ヽ༼ຈل͜ຈ༽ﾉ",
   "main": "index.js",
   "scripts": {

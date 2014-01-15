@@ -3,12 +3,15 @@
 get some cool ascii faces
 
 ```
-var GetACoolRandomCoolAsciiFace = require('cool-ascii-faces')
-console.log(GetACoolRandomCoolAsciiFace())
+var cool = require('cool-ascii-faces')
+
+console.log(cool())
 ᕙ༼ຈل͜ຈ༽ᕗ
-console.log(GetACoolRandomCoolAsciiFace())
+
+console.log(cool())
 ( ͝° ͜ʖ͡°)
-GetACoolRandomCoolAsciiFace.faces
+
+cool.faces // all the faces in one convenient array
 [ 'ヽ༼ຈل͜ຈ༽ﾉ',
   '(ง°ل͜°)ง',
   '༼ つ ಥ_ಥ ༽つ',
@@ -47,6 +50,9 @@ GetACoolRandomCoolAsciiFace.faces
   '(っ◕‿◕)っ',
   '( ͝° ͜ʖ͡°)',
   '(ง •̀_•́)ง' ]
+  
+cool.faceStream()
+// create a readable stream of all the faces
 ```
 
 ## pedants

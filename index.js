@@ -46,4 +46,7 @@ module.exports = function() {
 }
 
 module.exports.faces = faces
-module.exports.faceStream = spigot(faces)
+
+module.exports.faceStream = function() {
+  return spigot(faces)
+}
