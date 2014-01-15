@@ -1,3 +1,3 @@
 var cool = require("./")
 console.log(cool.faces)
-cool.faceStream().pipe()
+cool.faceStream().pipe(process.stdout)
