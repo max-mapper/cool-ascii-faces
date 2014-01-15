@@ -16,7 +16,7 @@ there are also a number of projects built on top of the `cool-ascii-face` platfo
 
 ```
 npm install cool-ascii-faces -g
-cool-face
+cool-face [-a | --all]
 ```
 
 ### JS Usage
