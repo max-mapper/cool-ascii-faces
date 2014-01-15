@@ -2,7 +2,7 @@
 
 get some cool ascii faces
 
-```js
+```
 var facePlz = require('cool-ascii-faces')
 console.log(facePlz())
 ᕙ༼ຈل͜ຈ༽ᕗ
