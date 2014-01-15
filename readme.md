@@ -63,7 +63,11 @@ cool.faces // all the faces in one convenient array
   'ノ( ゜-゜ノ)',
   '| (• ◡•)|',
   '(❍ᴥ❍ʋ)',
-  '¯\_(ツ)_/¯']
+  '¯\_(ツ)_/¯',
+  'ʕㅇ호ㅇʔ',
+  'ʕ´•ᴥ•`ʔ',
+  'ʕ ;•`ᴥ•´ʔ',
+  'ʅʕ•ᴥ•ʔʃ']
   
 cool.faceStream()
 // create a readable stream of all the faces
