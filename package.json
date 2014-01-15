@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maxogden/cool-ascii-faces/issues"
   },
-  "homepage": "https://github.com/maxogden/cool-ascii-faces"
+  "homepage": "https://github.com/maxogden/cool-ascii-faces",
+  "dependencies": {
+    "stream-spigot": "~3.0.3"
+  }
 }
