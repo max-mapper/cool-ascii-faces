@@ -1,5 +1,14 @@
 #!/usr/bin/env node
 
-var face = require('./');
+var coolFace = require('./');
+var args = process.argv.splice(2);
 
-process.stdout.write(face() + '\n');
+if (args.indexOf('-a') !== -1 || args.indexOf('--all') !== -1) {
+  coolFace.faces.forEach(function (face) {
+    process.stdout.write(face + '\n');
+  });
+
+  return;
+}
+
+process.stdout.write(coolFace() + '\n');
