@@ -128,7 +128,7 @@ var faces = [
   "꒰･◡･๑꒱",
   "﴾͡๏̯͡๏﴿",
   "｡◕‿◕｡"
-]"
+]
 
 module.exports = function() {
   return faces[Math.floor(Math.random() * faces.length)]
