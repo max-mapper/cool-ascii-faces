@@ -159,7 +159,8 @@ cool.faces // all the faces in one convenient array
   "꒰･◡･๑꒱",
   "﴾͡๏̯͡๏﴿",
   "｡◕‿◕｡",
-  "ʕノ◔ϖ◔ʔノ"
+  "ʕノ◔ϖ◔ʔノ",
+  "꒰•̥̥̥̥̥̥̥ ﹏ •̥̥̥̥̥̥̥̥๑꒱"
 ]
 
 cool.faceStream()
