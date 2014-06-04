@@ -176,5 +176,5 @@ module.exports.faceStream = function() {
 }
 
 module.exports.getFace = function(idx) {
-  return idx > 0 && idx < faces.length ? faces[idx] : '';
+  return idx >= 0 && idx < faces.length ? faces[idx] : '';
 }
