@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 
 var coolFace = require('./');
-var args = process.argv.splice(2);
+var program = require('commander');
 
-if (args.indexOf('-a') !== -1 || args.indexOf('--all') !== -1) {
+program
+.option('-a, --all', 'List all cool faces')
+.parse(process.argv);
+
+if (program.all){
   coolFace.faces.forEach(function (face) {
     process.stdout.write(face + '\n');
   });
-
-  return;
+}else{
+  process.stdout.write(coolFace() + '\n');
 }
-
-process.stdout.write(coolFace() + '\n');
