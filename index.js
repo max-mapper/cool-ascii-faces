@@ -1,7 +1,7 @@
 var spigot = require("stream-spigot")
 
-var faces = [
-  "( .-. )",
+var faces = {
+  'no-category': ["( .-. )",
   "( .o.)",
   "( `·´ )",
   "( ° ͜ ʖ °)",
@@ -163,11 +163,13 @@ var faces = [
   "(((╹д╹;)))",
   "•̀.̫•́✧",
   "(ᵒ̤̑ ₀̑ ᵒ̤̑)",
-  "\_(ʘ_ʘ)_/"
-]
+  "\_(ʘ_ʘ)_/"],
+}
 
 module.exports = function() {
-  return faces[Math.floor(Math.random() * faces.length)]
+  var categories = Object.keys(faces);
+  var randomCategory = categories[Math.floor(Math.random()*categories.length)];
+  return faces[randomCategory][Math.floor(Math.random()*(faces[randomCategory].length))];
 }
 
 module.exports.faces = faces

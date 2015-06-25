@@ -9,9 +9,11 @@ program
 .parse(process.argv);
 
 if (program.all){
-  coolFace.faces.forEach(function (face) {
-    process.stdout.write(face + '\n');
-  });
+  for (var categories in coolFace.faces){
+    coolFace.faces[categories].forEach(function (face) {
+      process.stdout.write(face + '\n');
+    });
+  }
 }else if (program.flipThatTable){
   process.stdout.write("flip that table\n");
 }else{
