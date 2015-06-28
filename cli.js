@@ -15,7 +15,8 @@ if (program.all){
     });
   }
 }else if (program.flipThatTable){
-  process.stdout.write("flip that table\n");
+  flipThatTable = coolFace.faces["flipThatTable"][Math.floor(Math.random()*(coolFace.faces["flipThatTable"].length))];
+  process.stdout.write(flipThatTable + '\n');
 }else{
   process.stdout.write(coolFace() + '\n');
 }
