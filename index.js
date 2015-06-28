@@ -1,5 +1,4 @@
 var spigot = require("stream-spigot")
-var pretty = require('js-object-pretty-print').pretty;
 
 var faces = {
   'uncategorised': ["( .-. )",
