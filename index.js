@@ -176,7 +176,7 @@ var faces = {
 }
 
 module.exports = function() {
-  var randomCategory = (Object.kets(faces))[Math.floor(Math.random()*categories.length)];
+  var randomCategory = (Object.keys(faces))[Math.floor(Math.random()*(Object.keys(faces).length))];
   return getFaceWithCategory(randomCategory);
 }
 
@@ -186,8 +186,10 @@ module.exports.faceStream = function() {
   return spigot(faces)
 }
 
-module.exports.getFaceWithCategory= function(category) {
+function getFaceWithCategory(category) {
   var selectedFaces = faces[category];
   var randomNumber = Math.floor(Math.random()*selectedFaces.length);
   return selectedFaces[randomNumber];
 }
+
+module.exports.getFaceWithCategory= getFaceWithCategory;
