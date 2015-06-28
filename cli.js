@@ -15,8 +15,7 @@ if (program.all){
     });
   }
 }else if (program.flipThatTable){
-  flipThatTable = coolFace.faces["flipThatTable"][Math.floor(Math.random()*(coolFace.faces["flipThatTable"].length))];
-  process.stdout.write(flipThatTable + '\n');
+  process.stdout.write(coolFace.getFaceWithCategory("flipThatTable") + '\n');
 }else{
   process.stdout.write(coolFace() + '\n');
 }
