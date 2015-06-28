@@ -1,4 +1,5 @@
 var spigot = require("stream-spigot")
+var pretty = require('js-object-pretty-print').pretty;
 
 var faces = {
   'uncategorised': ["( .-. )",
@@ -183,7 +184,8 @@ module.exports = function() {
 module.exports.faces = faces
 
 module.exports.faceStream = function() {
-  return spigot(faces)
+  var arr = Object.keys(faces).map(function (key) {return faces[key].join(", ")});
+  return spigot(arr)
 }
 
 function getFaceWithCategory(category) {
