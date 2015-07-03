@@ -1,6 +1,11 @@
 var spigot = require("stream-spigot")
 
 var faces = {
+  'happy':["(ಠ‿ಠ)",
+  "(ʘ‿ʘ)",
+  "(ᵔᴥᵔ)",
+  "✌(-‿-)✌",
+    ],
   'uncategorised': ["( .-. )",
   "( .o.)",
   "( `·´ )",
@@ -17,11 +22,9 @@ var faces = {
   "(´・ω・)っ",
   "(ó ì_í)",
   "(ʘᗩʘ')",
-  "(ʘ‿ʘ)",
   "(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄",
   "(͡° ͜ʖ ͡°)",
   "(ಠ_ಠ)",
-  "(ಠ‿ಠ)",
   "(ಠ⌣ಠ)",
   "(ಥ_ಥ)",
   "(ಥ﹏ಥ)",
@@ -32,7 +35,6 @@ var faces = {
   "(ง°ل͜°)ง",
   "(ง⌐□ل͜□)ง",
   "(ღ˘⌣˘ღ)",
-  "(ᵔᴥᵔ)",
   "(•ω•)",
   "(•◡•)/",
   "(⊙ω⊙)",
@@ -113,7 +115,6 @@ var faces = {
   "☼.☼",
   "♥‿♥",
   "⚆ _ ⚆",
-  "✌(-‿-)✌",
   "〆(・∀・＠)",
   "ノ( º _ ºノ)",
   "ノ( ゜-゜ノ)",
@@ -177,11 +178,6 @@ var faces = {
     "/( .□.) ︵╰(゜益゜)╯︵ /(.□. /)"],
 }
 
-module.exports = function() {
-  var randomCategory = (Object.keys(faces))[Math.floor(Math.random()*(Object.keys(faces).length))];
-  return getFaceWithCategory(randomCategory);
-}
-
 module.exports.faces = faces
 
 module.exports.faceStream = function() {
@@ -190,6 +186,9 @@ module.exports.faceStream = function() {
 }
 
 function getFaceWithCategory(category) {
+  if (category == "random"){
+    category = (Object.keys(faces))[Math.floor(Math.random()*(Object.keys(faces).length))];
+  }
   var selectedFaces = faces[category];
   var randomNumber = Math.floor(Math.random()*selectedFaces.length);
   return selectedFaces[randomNumber];
