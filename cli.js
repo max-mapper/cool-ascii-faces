@@ -7,11 +7,13 @@ program
 .option('-a, --all', 'List all cool faces')
 .option('-F, --flip-that-table','FLIP THAT TABLE')
 .option('-h, --happy', 'List all happy faces')
+.option('-L, --LOL', 'Laugh out loud')
 .parse(process.argv);
 
 var category = "random"
 if (program.flipThatTable) category = "flipThatTable"
 if (program.happy) category = "happy"
+if (program.LOL) category = "LOL"
 
 if (program.all){
   for (var categories in coolFace.faces){
