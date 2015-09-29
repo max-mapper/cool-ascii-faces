@@ -11,6 +11,7 @@ there are also a number of projects built on top of the `cool-ascii-face` platfo
 - https://github.com/kid-icarus/web-cool-ascii-faces
 - https://npmjs.org/package/hubot-cool-ascii-faces
 - https://github.com/btford/alfred-cool-ascii-faces
+- https://github.com/mgyarmathy/cool-face-service
 
 ### CLI Usage
 
