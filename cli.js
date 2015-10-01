@@ -1,14 +1,26 @@
 #!/usr/bin/env node
 
 var coolFace = require('./');
-var args = process.argv.splice(2);
+var program = require('commander');
 
-if (args.indexOf('-a') !== -1 || args.indexOf('--all') !== -1) {
-  coolFace.faces.forEach(function (face) {
-    process.stdout.write(face + '\n');
-  });
+program
+.option('-a, --all', 'List all cool faces')
+.option('-F, --flip-that-table','FLIP THAT TABLE')
+.option('-h, --happy', 'List all happy faces')
+.option('-L, --LOL', 'Laugh out loud')
+.parse(process.argv);
 
-  return;
+var category = "random"
+if (program.flipThatTable) category = "flipThatTable"
+if (program.happy) category = "happy"
+if (program.LOL) category = "LOL"
+
+if (program.all){
+  for (var categories in coolFace.faces){
+    coolFace.faces[categories].forEach(function (face) {
+      process.stdout.write(face + '\n');
+    });
+  }
+}else{
+  process.stdout.write(coolFace.getFaceWithCategory(category) + '\n');
 }
-
-process.stdout.write(coolFace() + '\n');
