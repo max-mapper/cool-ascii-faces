@@ -13,6 +13,11 @@ there are also a number of projects built on top of the `cool-ascii-face` platfo
 - https://github.com/btford/alfred-cool-ascii-faces
 - https://github.com/mgyarmathy/cool-face-service
 
+## sorry pedants!
+
+yes i know r mostly unicode
+deal wit it (⌐■_■)
+
 ### CLI Usage
 
 ```
@@ -202,6 +207,3 @@ cool.faceStream()
 // create a readable stream of all the faces
 ```
 
-## pedants
-
-yes most of these use non-ascii unicode characters but 'unicode art' doesnt have the same ring as 'ascii art'
