@@ -283,3 +283,7 @@ module.exports.faces = faces
 module.exports.faceStream = function() {
   return spigot(faces)
 }
+
+module.exports.getFace = function(idx) {
+  return idx >= 0 && idx < faces.length ? faces[idx] : '';
+}
